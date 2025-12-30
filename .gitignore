@@ -1,0 +1,18 @@
+# Ignorer l'environnement virtuel (TRES IMPORTANT)
+venv/
+env/
+
+# Ignorer les fichiers temporaires Python
+__pycache__/
+*.pyc
+
+# Ignorer les dossiers de résultats YOLO (trop lourds)
+runs/
+
+# Ignorer les vidéos de résultat (on veut que l'utilisateur les génère lui-même)
+demo_result.avi
+*.avi
+
+# Ignorer les fichiers systèmes
+.DS_Store
+Thumbs.db
