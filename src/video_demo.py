@@ -29,12 +29,12 @@ print(f"Chargement du modèle : {MODEL_PATH}")
 try:
     model = YOLO(MODEL_PATH)
 except Exception as e:
-    print(f"❌ Erreur modèle : {e}")
+    print(f"Erreur modèle : {e}")
     exit()
 
 # Vérifier si la vidéo d'entrée existe
 if not os.path.exists(INPUT_VIDEO):
-    print(f"❌ ERREUR : La vidéo '{INPUT_VIDEO}' n'existe pas à la racine du projet.")
+    print(f"ERREUR : La vidéo '{INPUT_VIDEO}' n'existe pas à la racine du projet.")
     exit()
 
 # Chargement de la vidéo
@@ -102,4 +102,4 @@ while cap.isOpened():
 cap.release()
 out.release() # Très important de relâcher le fichier de sortie
 cv2.destroyAllWindows()
-print("✅ Traitement terminé ! Vidéo enregistrée.")
+print("Traitement terminé ! Vidéo enregistrée.")

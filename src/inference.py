@@ -4,10 +4,10 @@ import time
 import winsound # Pour le bip sonore sur Windows
 
 # --- CONFIGURATION ---
-# 1. Chemin du modèle (Vérifie bien le nom !)
+# 1. Chemin du modèle
 MODEL_PATH = 'models/drowsy_v2.pt' 
 
-# 2. Tes 11 classes exactes (Ne change pas l'ordre)
+# 2. 11 classes exactes (Ne change pas l'ordre)
 CLASS_NAMES = [
     'Attentive eye', # 0 - OK
     'Drowsy eye',    # 1 - DANGER
@@ -36,7 +36,7 @@ print(f"Chargement du modèle : {MODEL_PATH}")
 try:
     model = YOLO(MODEL_PATH)
 except:
-    print(f"❌ ERREUR : Le fichier {MODEL_PATH} est introuvable.")
+    print(f"ERREUR : Le fichier {MODEL_PATH} est introuvable.")
     print("Vérifie que tu l'as bien mis dans le dossier 'models' !")
     exit()
 
@@ -47,13 +47,13 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
 if not cap.isOpened():
-    print("❌ ERREUR CAMÉRA : Vérifie que OBS Virtual Camera est démarrée.")
+    print("ERREUR CAMÉRA : Vérifie que OBS Virtual Camera est démarrée.")
     # Si OBS ne marche pas, essaye cap = cv2.VideoCapture(0)
     exit()
 
 start_time = None
 
-print("✅ Système prêt ! Appuie sur 'q' pour quitter.")
+print("Système prêt ! Appuie sur 'q' pour quitter.")
 
 while True:
     ret, frame = cap.read()
