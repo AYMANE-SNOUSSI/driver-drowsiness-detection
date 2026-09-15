@@ -271,7 +271,6 @@ During playback, `a` acknowledges the alarm and `q` quits.
 
 ---
 
-## Project structure
 
 ## Modules
 
