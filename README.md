@@ -241,8 +241,8 @@ Design constraints:
 ## Quickstart
 
 ```bash
-git clone https://github.com/AYMANE-SNOUSSI/sleep_detection.git
-cd sleep_detection
+git clone https://github.com/AYMANE-SNOUSSI/driver-drowsiness-detection.git
+cd driver-drowsiness-detection
 python -m venv .venv && .venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 
