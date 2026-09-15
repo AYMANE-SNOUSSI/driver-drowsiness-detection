@@ -285,7 +285,7 @@ During playback, `a` acknowledges the alarm and `q` quits.
 | `notebooks/dataset_audit.ipynb` | How the dataset was diagnosed and rebuilt: class-scale measurement, visual inspection, filtering, stratified re-split, and the three training runs. |
 
 ```
-sleep_detection/
+driver-drowsiness-detection/
 ├── src/                  # pipeline and benchmarks
 ├── notebooks/            # dataset audit
 ├── assets/               # demo GIFs
